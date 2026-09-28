@@ -51,14 +51,7 @@ package() {
    ln -s /usr/lib/libstdc++.so.6 $srcdir/opt/1cv8/$arch/$pkgver.$pkgrel/libstdc++.so.6
    rm -f $srcdir/opt/1cv8/$arch/$pkgver.$pkgrel/libgcc_s.so.1
    ln -s /usr/lib/libgcc_s.so.1 $srcdir/opt/1cv8/$arch/$pkgver.$pkgrel/libgcc_s.so.1
-   # ln -s /usr/lib/libenchant-2.so $srcdir/opt/1cv8/$arch/$pkgver.$pkgrel/libenchant.so.1
 
    cp -r $srcdir/usr $pkgdir
-#   cp -r $srcdir/etc $pkgdir
    cp -r $srcdir/opt $pkgdir
-#   mkdir -p $pkgdir/usr/lib
-#   cp -f $srcdir/../libicuuc.so.59.1 $pkgdir/usr/lib/libicuuc.so.59
-#   cp -f $srcdir/../libicui18n.so.59.1 $pkgdir/usr/lib/libicui18n.so.59
-#   ln -sf /usr/lib/libicuuc.so $pkgdir/usr/lib/libicuuc.so.59
-#   ln -sf /usr/lib/libicui18n.so $pkgdir/usr/lib/libicui18n.so.59
 }
